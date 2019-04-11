@@ -2,7 +2,7 @@
 
 Substrate Runtime Module Library(SRML)
 
-複数の資産資産を作成するためのライブラリ
+複数の資産を作成するためのライブラリ
 
 
 <substrate-node>/runtime/Cargo.toml に下記を追加
