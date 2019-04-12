@@ -1,6 +1,6 @@
 [package]
 name = "bdevux-assets"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Koichi Matsuda <k-matsuda@caldia.org>"]
 edition = "2018"
 
@@ -9,7 +9,7 @@ default-features = false
 features = ['derive']
 version = '3.2'
 
-[dev-dependencies.primitives]
+[dependencies.primitives]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'substrate-primitives'
@@ -27,7 +27,7 @@ git = 'https://github.com/paritytech/substrate.git'
 package = 'sr-std'
 tag = "v1.0.0rc1"
 
-[dev-dependencies.runtime-io]
+[dependencies.runtime-io]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'sr-io'
@@ -54,9 +54,9 @@ default = ['std']
 std = [
     'parity-codec/std',
     'rstd/std',
-    # 'runtime-io/std',
+    'runtime-io/std',
     'support/std',
-    # 'primitives/std',
+    'primitives/std',
     'system/std',
     "parity-codec-derive/std",
 ]
